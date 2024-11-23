@@ -1,0 +1,47 @@
+INFO:root:Namespace(model_name='NARM', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-10-23 15:46:45 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ attention_size     | 4                   
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 32                  
+ epoch              | 100                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ hidden_size        | 100                 
+ history_max        | 20                  
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ num_neg            | 1                   
+ num_workers        | 0                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food\SeqReader.pkl
+INFO:root:#params: 366452
+INFO:root:NARM(
+  (i_embeddings): Embedding(8714, 32)
+  (encoder_g): GRU(32, 100, batch_first=True)
+  (encoder_l): GRU(32, 100, batch_first=True)
+  (A1): Linear(in_features=100, out_features=4, bias=False)
+  (A2): Linear(in_features=100, out_features=4, bias=False)
+  (attention_out): Linear(in_features=4, out_features=1, bias=False)
+  (out): Linear(in_features=200, out_features=32, bias=False)
+)
+INFO:root:Test Before Training: (HR@5:0.0510,NDCG@5:0.0304,HR@10:0.1082,NDCG@10:0.0487,HR@20:0.2053,NDCG@20:0.0730,HR@50:0.5003,NDCG@50:0.1306)
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1     loss=0.4972 [45.1 s]	dev=(HR@5:0.2777,NDCG@5:0.1842) [1.5 s] *
+INFO:root:Early stop manually
+INFO:root:
+--------------------------------------------- END: 2024-10-23 15:47:57 ---------------------------------------------

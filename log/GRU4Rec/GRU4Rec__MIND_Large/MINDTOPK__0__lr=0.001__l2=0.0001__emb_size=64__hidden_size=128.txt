@@ -1,0 +1,65 @@
+INFO:root:Namespace(model_name='GRU4Rec', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-10-23 16:42:57 ---------------------------------------------
+INFO:root:
+==========================================
+ Arguments          | Values              
+==========================================
+ batch_size         | 256                
+ data_appendix      |                    
+ dataset            | MIND_Large/MINDTOPK
+ dropout            | 0                  
+ early_stop         | 10                 
+ emb_size           | 64                 
+ epoch              | 100                
+ eval_batch_size    | 256                
+ gpu                | 0                  
+ hidden_size        | 128                
+ history_max        | 20                 
+ l2                 | 0.0001             
+ lr                 | 0.001              
+ main_metric        |                    
+ num_neg            | 1                  
+ num_workers        | 0                  
+ optimizer          | Adam               
+ random_seed        | 0                  
+ save_final_results | 1                  
+ test_all           | 0                  
+ topk               | 5,10,20,50         
+==========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/MIND_Large/MINDTOPK\SeqReader.pkl
+INFO:root:#params: 263104
+INFO:root:GRU4Rec(
+  (i_embeddings): Embedding(2818, 64)
+  (rnn): GRU(64, 128, batch_first=True)
+  (out): Linear(in_features=128, out_features=64, bias=True)
+)
+INFO:root:Test Before Training: (HR@5:0.0294,NDCG@5:0.0177,HR@10:0.0686,NDCG@10:0.0302,HR@20:0.2196,NDCG@20:0.0680,HR@50:0.5549,NDCG@50:0.1338)
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1     loss=0.3964 [30.5 s]	dev=(HR@5:0.0479,NDCG@5:0.0275) [0.3 s] *
+INFO:root:Epoch 2     loss=0.2699 [33.3 s]	dev=(HR@5:0.1101,NDCG@5:0.0636) [0.4 s] *
+INFO:root:Epoch 3     loss=0.2423 [31.8 s]	dev=(HR@5:0.1672,NDCG@5:0.1029) [0.4 s] *
+INFO:root:Epoch 4     loss=0.2296 [34.9 s]	dev=(HR@5:0.2669,NDCG@5:0.1650) [0.4 s] *
+INFO:root:Epoch 5     loss=0.2173 [34.2 s]	dev=(HR@5:0.1681,NDCG@5:0.0975) [0.4 s]
+INFO:root:Epoch 6     loss=0.2149 [32.0 s]	dev=(HR@5:0.1896,NDCG@5:0.1163) [0.4 s]
+INFO:root:Epoch 7     loss=0.2098 [32.9 s]	dev=(HR@5:0.1834,NDCG@5:0.1062) [0.4 s]
+INFO:root:Epoch 8     loss=0.2075 [32.5 s]	dev=(HR@5:0.2294,NDCG@5:0.1355) [0.4 s]
+INFO:root:Epoch 9     loss=0.2042 [35.1 s]	dev=(HR@5:0.1859,NDCG@5:0.1136) [0.4 s]
+INFO:root:Epoch 10    loss=0.2026 [34.2 s]	dev=(HR@5:0.1491,NDCG@5:0.0931) [0.4 s]
+INFO:root:Epoch 11    loss=0.1969 [31.8 s]	dev=(HR@5:0.1580,NDCG@5:0.0915) [0.4 s]
+INFO:root:Epoch 12    loss=0.1928 [32.2 s]	dev=(HR@5:0.1951,NDCG@5:0.1165) [0.3 s]
+INFO:root:Epoch 13    loss=0.1891 [31.9 s]	dev=(HR@5:0.1936,NDCG@5:0.1159) [0.3 s]
+INFO:root:Early stop at 13 based on dev result.
+INFO:root:
+Best Iter(dev)=    4	 dev=(HR@5:0.2669,NDCG@5:0.1650) [432.2 s] 
+INFO:root:Load model from ../model/GRU4Rec/GRU4Rec__MIND_Large/MINDTOPK__0__lr=0.001__l2=0.0001__emb_size=64__hidden_size=128.pt
+INFO:root:
+Dev  After Training: (HR@5:0.2669,NDCG@5:0.1650,HR@10:0.3785,NDCG@10:0.2012,HR@20:0.5199,NDCG@20:0.2365,HR@50:0.8675,NDCG@50:0.3056)
+INFO:root:
+Test After Training: (HR@5:0.2010,NDCG@5:0.1221,HR@10:0.2725,NDCG@10:0.1451,HR@20:0.4637,NDCG@20:0.1929,HR@50:0.7686,NDCG@50:0.2529)
+INFO:root:Saving top-100 recommendation results to: ../log/GRU4Rec/GRU4Rec__MIND_Large\MINDTOPK__0__lr=0\rec-GRU4Rec-dev.csv
+INFO:root:dev Prediction results saved!
+INFO:root:Saving top-100 recommendation results to: ../log/GRU4Rec/GRU4Rec__MIND_Large\MINDTOPK__0__lr=0\rec-GRU4Rec-test.csv
+INFO:root:test Prediction results saved!
+INFO:root:
+--------------------------------------------- END: 2024-10-23 16:50:12 ---------------------------------------------

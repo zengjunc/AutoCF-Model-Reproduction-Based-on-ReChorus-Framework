@@ -1,0 +1,89 @@
+INFO:root:Namespace(model_name='SLRCPlus', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-10-23 08:38:40 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | MovieLens-1M/ML_1...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 32                  
+ epoch              | 100                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ history_max        | 20                  
+ include_attr       | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ num_neg            | 1                   
+ num_workers        | 0                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 0                   
+ time_scalar        | 8640000             
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/MovieLens-1M/ML_1MTOPK\KGReader.pkl
+INFO:root:#params: 158880
+INFO:root:SLRCPlus(
+  (u_embeddings): Embedding(3017, 32)
+  (i_embeddings): Embedding(1561, 32)
+  (user_bias): Embedding(3017, 1)
+  (item_bias): Embedding(1561, 1)
+  (alphas): Embedding(1561, 1)
+  (pis): Embedding(1561, 1)
+  (betas): Embedding(1561, 1)
+  (sigmas): Embedding(1561, 1)
+  (mus): Embedding(1561, 1)
+)
+INFO:root:Test Before Training: (HR@5:0.0330,NDCG@5:0.0208,HR@10:0.0776,NDCG@10:0.0350,HR@20:0.1839,NDCG@20:0.0615,HR@50:0.4957,NDCG@50:0.1223)
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1     loss=0.5558 [12.6 s]	dev=(HR@5:0.3504,NDCG@5:0.2463) [0.0 s] *
+INFO:root:Epoch 2     loss=0.3545 [10.9 s]	dev=(HR@5:0.3521,NDCG@5:0.2498) [0.0 s] *
+INFO:root:Epoch 3     loss=0.3256 [11.8 s]	dev=(HR@5:0.3537,NDCG@5:0.2473) [0.0 s]
+INFO:root:Epoch 4     loss=0.3114 [15.2 s]	dev=(HR@5:0.3653,NDCG@5:0.2622) [0.0 s] *
+INFO:root:Epoch 5     loss=0.3000 [11.3 s]	dev=(HR@5:0.3620,NDCG@5:0.2600) [0.0 s]
+INFO:root:Epoch 6     loss=0.2895 [12.8 s]	dev=(HR@5:0.3736,NDCG@5:0.2573) [0.0 s]
+INFO:root:Epoch 7     loss=0.2801 [11.8 s]	dev=(HR@5:0.3802,NDCG@5:0.2656) [0.0 s] *
+INFO:root:Epoch 8     loss=0.2732 [11.5 s]	dev=(HR@5:0.3686,NDCG@5:0.2638) [0.0 s]
+INFO:root:Epoch 9     loss=0.2654 [11.3 s]	dev=(HR@5:0.3752,NDCG@5:0.2652) [0.0 s]
+INFO:root:Epoch 10    loss=0.2572 [11.7 s]	dev=(HR@5:0.3736,NDCG@5:0.2631) [0.0 s]
+INFO:root:Epoch 11    loss=0.2476 [11.8 s]	dev=(HR@5:0.3835,NDCG@5:0.2680) [0.0 s] *
+INFO:root:Epoch 12    loss=0.2386 [11.9 s]	dev=(HR@5:0.3752,NDCG@5:0.2672) [0.0 s]
+INFO:root:Epoch 13    loss=0.2305 [11.7 s]	dev=(HR@5:0.3653,NDCG@5:0.2612) [0.0 s]
+INFO:root:Epoch 14    loss=0.2218 [12.0 s]	dev=(HR@5:0.3636,NDCG@5:0.2611) [0.0 s]
+INFO:root:Epoch 15    loss=0.2152 [11.3 s]	dev=(HR@5:0.3603,NDCG@5:0.2585) [0.0 s]
+INFO:root:Epoch 16    loss=0.2084 [11.7 s]	dev=(HR@5:0.3752,NDCG@5:0.2660) [0.0 s]
+INFO:root:Epoch 17    loss=0.2031 [12.0 s]	dev=(HR@5:0.3719,NDCG@5:0.2661) [0.0 s]
+INFO:root:Epoch 18    loss=0.1994 [11.6 s]	dev=(HR@5:0.3719,NDCG@5:0.2681) [0.0 s] *
+INFO:root:Epoch 19    loss=0.1935 [11.5 s]	dev=(HR@5:0.3702,NDCG@5:0.2652) [0.0 s]
+INFO:root:Epoch 20    loss=0.1906 [11.5 s]	dev=(HR@5:0.3521,NDCG@5:0.2592) [0.0 s]
+INFO:root:Epoch 21    loss=0.1825 [11.4 s]	dev=(HR@5:0.3736,NDCG@5:0.2710) [0.0 s] *
+INFO:root:Epoch 22    loss=0.1821 [11.6 s]	dev=(HR@5:0.3752,NDCG@5:0.2680) [0.0 s]
+INFO:root:Epoch 23    loss=0.1767 [11.7 s]	dev=(HR@5:0.3785,NDCG@5:0.2674) [0.0 s]
+INFO:root:Epoch 24    loss=0.1717 [12.0 s]	dev=(HR@5:0.3653,NDCG@5:0.2608) [0.0 s]
+INFO:root:Epoch 25    loss=0.1679 [11.3 s]	dev=(HR@5:0.3702,NDCG@5:0.2617) [0.0 s]
+INFO:root:Epoch 26    loss=0.1668 [11.6 s]	dev=(HR@5:0.3752,NDCG@5:0.2666) [0.0 s]
+INFO:root:Epoch 27    loss=0.1624 [11.8 s]	dev=(HR@5:0.3653,NDCG@5:0.2618) [0.0 s]
+INFO:root:Epoch 28    loss=0.1605 [11.7 s]	dev=(HR@5:0.3554,NDCG@5:0.2582) [0.0 s]
+INFO:root:Epoch 29    loss=0.1570 [11.5 s]	dev=(HR@5:0.3603,NDCG@5:0.2603) [0.0 s]
+INFO:root:Epoch 30    loss=0.1532 [11.8 s]	dev=(HR@5:0.3702,NDCG@5:0.2643) [0.0 s]
+INFO:root:Early stop at 30 based on dev result.
+INFO:root:
+Best Iter(dev)=   21	 dev=(HR@5:0.3736,NDCG@5:0.2710) [355.0 s] 
+INFO:root:Load model from ../model/SLRCPlus/SLRCPlus__MovieLens-1M/ML_1MTOPK__0__lr=0.001__l2=1e-06__emb_size=32.pt
+INFO:root:
+Dev  After Training: (HR@5:0.3736,NDCG@5:0.2710,HR@10:0.5421,NDCG@10:0.3258,HR@20:0.7471,NDCG@20:0.3776,HR@50:0.9455,NDCG@50:0.4177)
+INFO:root:
+Test After Training: (HR@5:0.3693,NDCG@5:0.2455,HR@10:0.5431,NDCG@10:0.3013,HR@20:0.7328,NDCG@20:0.3492,HR@50:0.9296,NDCG@50:0.3887)
+INFO:root:Saving top-100 recommendation results to: ../log/SLRCPlus/SLRCPlus__MovieLens-1M\ML_1MTOPK__0__lr=0\rec-SLRCPlus-dev.csv
+INFO:root:dev Prediction results saved!
+INFO:root:Saving top-100 recommendation results to: ../log/SLRCPlus/SLRCPlus__MovieLens-1M\ML_1MTOPK__0__lr=0\rec-SLRCPlus-test.csv
+INFO:root:test Prediction results saved!
+INFO:root:
+--------------------------------------------- END: 2024-10-23 08:44:38 ---------------------------------------------

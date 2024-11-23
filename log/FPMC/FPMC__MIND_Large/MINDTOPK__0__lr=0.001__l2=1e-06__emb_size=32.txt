@@ -1,0 +1,77 @@
+INFO:root:Namespace(model_name='FPMC', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-10-20 13:15:15 ---------------------------------------------
+INFO:root:
+==========================================
+ Arguments          | Values              
+==========================================
+ batch_size         | 256                
+ data_appendix      |                    
+ dataset            | MIND_Large/MINDTOPK
+ dropout            | 0                  
+ early_stop         | 10                 
+ emb_size           | 32                 
+ epoch              | 100                
+ eval_batch_size    | 256                
+ gpu                | 0                  
+ history_max        | 20                 
+ l2                 | 1e-06              
+ lr                 | 0.001              
+ main_metric        |                    
+ num_neg            | 1                  
+ num_workers        | 0                  
+ optimizer          | Adam               
+ random_seed        | 0                  
+ save_final_results | 1                  
+ test_all           | 0                  
+ topk               | 5,10,20,50         
+==========================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "data/", dataset = "MIND_Large/MINDTOPK" 
+INFO:root:Counting dataset statistics...
+INFO:root:"# user": 16526, "# item": 2817, "# entry": 163861
+INFO:root:Appending history info...
+INFO:root:Save corpus to data/MIND_Large/MINDTOPK\SeqReader.pkl
+INFO:root:#params: 799392
+INFO:root:FPMC(
+  (ui_embeddings): Embedding(16527, 32)
+  (iu_embeddings): Embedding(2818, 32)
+  (li_embeddings): Embedding(2818, 32)
+  (il_embeddings): Embedding(2818, 32)
+)
+INFO:root:Test Before Training: (HR@5:0.0431,NDCG@5:0.0264,HR@10:0.0902,NDCG@10:0.0415,HR@20:0.1873,NDCG@20:0.0658,HR@50:0.5147,NDCG@50:0.1300)
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1     loss=0.5564 [4.1 s]	dev=(HR@5:0.0681,NDCG@5:0.0394) [0.1 s] *
+INFO:root:Epoch 2     loss=0.3366 [4.2 s]	dev=(HR@5:0.1037,NDCG@5:0.0593) [0.1 s] *
+INFO:root:Epoch 3     loss=0.2775 [4.2 s]	dev=(HR@5:0.1325,NDCG@5:0.0770) [0.1 s] *
+INFO:root:Epoch 4     loss=0.2438 [4.2 s]	dev=(HR@5:0.1503,NDCG@5:0.0898) [0.1 s] *
+INFO:root:Epoch 5     loss=0.2196 [4.5 s]	dev=(HR@5:0.1644,NDCG@5:0.0968) [0.1 s] *
+INFO:root:Epoch 6     loss=0.2025 [4.3 s]	dev=(HR@5:0.1617,NDCG@5:0.0969) [0.1 s] *
+INFO:root:Epoch 7     loss=0.1854 [4.9 s]	dev=(HR@5:0.1623,NDCG@5:0.0982) [0.1 s] *
+INFO:root:Epoch 8     loss=0.1712 [4.4 s]	dev=(HR@5:0.1810,NDCG@5:0.1112) [0.1 s] *
+INFO:root:Epoch 9     loss=0.1599 [4.5 s]	dev=(HR@5:0.1825,NDCG@5:0.1119) [0.1 s] *
+INFO:root:Epoch 10    loss=0.1496 [4.5 s]	dev=(HR@5:0.1699,NDCG@5:0.1043) [0.1 s]
+INFO:root:Epoch 11    loss=0.1391 [4.3 s]	dev=(HR@5:0.1782,NDCG@5:0.1106) [0.1 s]
+INFO:root:Epoch 12    loss=0.1299 [4.3 s]	dev=(HR@5:0.1847,NDCG@5:0.1170) [0.1 s] *
+INFO:root:Epoch 13    loss=0.1226 [4.5 s]	dev=(HR@5:0.1810,NDCG@5:0.1142) [0.1 s]
+INFO:root:Epoch 14    loss=0.1159 [4.1 s]	dev=(HR@5:0.1678,NDCG@5:0.1054) [0.0 s]
+INFO:root:Epoch 15    loss=0.1091 [4.2 s]	dev=(HR@5:0.1718,NDCG@5:0.1077) [0.1 s]
+INFO:root:Epoch 16    loss=0.1039 [4.1 s]	dev=(HR@5:0.1712,NDCG@5:0.1086) [0.1 s]
+INFO:root:Epoch 17    loss=0.0979 [4.2 s]	dev=(HR@5:0.1804,NDCG@5:0.1128) [0.1 s]
+INFO:root:Epoch 18    loss=0.0925 [4.2 s]	dev=(HR@5:0.1733,NDCG@5:0.1096) [0.0 s]
+INFO:root:Epoch 19    loss=0.0887 [4.2 s]	dev=(HR@5:0.1807,NDCG@5:0.1134) [0.1 s]
+INFO:root:Epoch 20    loss=0.0836 [4.4 s]	dev=(HR@5:0.1672,NDCG@5:0.1047) [0.1 s]
+INFO:root:Epoch 21    loss=0.0811 [4.3 s]	dev=(HR@5:0.1690,NDCG@5:0.1074) [0.1 s]
+INFO:root:Early stop at 21 based on dev result.
+INFO:root:
+Best Iter(dev)=   12	 dev=(HR@5:0.1847,NDCG@5:0.1170) [92.1 s] 
+INFO:root:Load model from ../model/FPMC/FPMC__MIND_Large/MINDTOPK__0__lr=0.001__l2=1e-06__emb_size=32.pt
+INFO:root:
+Dev  After Training: (HR@5:0.1847,NDCG@5:0.1170,HR@10:0.2883,NDCG@10:0.1504,HR@20:0.4660,NDCG@20:0.1949,HR@50:0.7917,NDCG@50:0.2602)
+INFO:root:
+Test After Training: (HR@5:0.1804,NDCG@5:0.1207,HR@10:0.2873,NDCG@10:0.1555,HR@20:0.4412,NDCG@20:0.1944,HR@50:0.7098,NDCG@50:0.2479)
+INFO:root:Saving top-100 recommendation results to: ../log/FPMC/FPMC__MIND_Large\MINDTOPK__0__lr=0\rec-FPMC-dev.csv
+INFO:root:dev Prediction results saved!
+INFO:root:Saving top-100 recommendation results to: ../log/FPMC/FPMC__MIND_Large\MINDTOPK__0__lr=0\rec-FPMC-test.csv
+INFO:root:test Prediction results saved!
+INFO:root:
+--------------------------------------------- END: 2024-10-20 13:16:51 ---------------------------------------------

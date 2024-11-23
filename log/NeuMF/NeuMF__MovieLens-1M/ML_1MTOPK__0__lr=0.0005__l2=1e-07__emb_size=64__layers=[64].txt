@@ -1,0 +1,77 @@
+INFO:root:Namespace(model_name='NeuMF', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-10-25 10:25:13 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | MovieLens-1M/ML_1...
+ dropout            | 0.2                 
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 100                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-07               
+ layers             | [64]                
+ lr                 | 0.0005              
+ main_metric        |                     
+ num_neg            | 1                   
+ num_workers        | 0                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/MovieLens-1M/ML_1MTOPK\BaseReader.pkl
+INFO:root:#params: 594368
+INFO:root:NeuMF(
+  (mf_u_embeddings): Embedding(3017, 64)
+  (mf_i_embeddings): Embedding(1561, 64)
+  (mlp_u_embeddings): Embedding(3017, 64)
+  (mlp_i_embeddings): Embedding(1561, 64)
+  (mlp): ModuleList(
+    (0): Linear(in_features=128, out_features=64, bias=True)
+  )
+  (dropout_layer): Dropout(p=0.2, inplace=False)
+  (prediction): Linear(in_features=128, out_features=1, bias=False)
+)
+INFO:root:Test Before Training: (HR@5:0.0374,NDCG@5:0.0203,HR@10:0.0819,NDCG@10:0.0343,HR@20:0.1897,NDCG@20:0.0610,HR@50:0.5144,NDCG@50:0.1242)
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1     loss=0.4150 [5.0 s]	dev=(HR@5:0.3488,NDCG@5:0.2462) [0.1 s] *
+INFO:root:Epoch 2     loss=0.3314 [3.9 s]	dev=(HR@5:0.3554,NDCG@5:0.2542) [0.1 s] *
+INFO:root:Epoch 3     loss=0.2934 [3.7 s]	dev=(HR@5:0.3736,NDCG@5:0.2589) [0.1 s] *
+INFO:root:Epoch 4     loss=0.2613 [3.9 s]	dev=(HR@5:0.3686,NDCG@5:0.2583) [0.0 s]
+INFO:root:Epoch 5     loss=0.2398 [3.9 s]	dev=(HR@5:0.3719,NDCG@5:0.2651) [0.1 s] *
+INFO:root:Epoch 6     loss=0.2249 [3.9 s]	dev=(HR@5:0.3587,NDCG@5:0.2508) [0.0 s]
+INFO:root:Epoch 7     loss=0.2112 [3.8 s]	dev=(HR@5:0.3686,NDCG@5:0.2568) [0.1 s]
+INFO:root:Epoch 8     loss=0.2019 [3.8 s]	dev=(HR@5:0.3570,NDCG@5:0.2577) [0.0 s]
+INFO:root:Epoch 9     loss=0.1944 [3.8 s]	dev=(HR@5:0.3736,NDCG@5:0.2634) [0.1 s]
+INFO:root:Epoch 10    loss=0.1868 [3.9 s]	dev=(HR@5:0.3719,NDCG@5:0.2575) [0.1 s]
+INFO:root:Epoch 11    loss=0.1801 [3.9 s]	dev=(HR@5:0.3802,NDCG@5:0.2656) [0.0 s] *
+INFO:root:Epoch 12    loss=0.1732 [3.8 s]	dev=(HR@5:0.3702,NDCG@5:0.2593) [0.0 s]
+INFO:root:Epoch 13    loss=0.1672 [3.8 s]	dev=(HR@5:0.3785,NDCG@5:0.2614) [0.0 s]
+INFO:root:Epoch 14    loss=0.1608 [3.9 s]	dev=(HR@5:0.3752,NDCG@5:0.2583) [0.0 s]
+INFO:root:Epoch 15    loss=0.1567 [3.8 s]	dev=(HR@5:0.3603,NDCG@5:0.2484) [0.0 s]
+INFO:root:Epoch 16    loss=0.1512 [3.9 s]	dev=(HR@5:0.3603,NDCG@5:0.2520) [0.1 s]
+INFO:root:Epoch 17    loss=0.1457 [3.8 s]	dev=(HR@5:0.3537,NDCG@5:0.2504) [0.0 s]
+INFO:root:Epoch 18    loss=0.1416 [3.9 s]	dev=(HR@5:0.3603,NDCG@5:0.2485) [0.1 s]
+INFO:root:Epoch 19    loss=0.1358 [3.9 s]	dev=(HR@5:0.3702,NDCG@5:0.2517) [0.1 s]
+INFO:root:Epoch 20    loss=0.1326 [3.9 s]	dev=(HR@5:0.3587,NDCG@5:0.2435) [0.1 s]
+INFO:root:Early stop at 20 based on dev result.
+INFO:root:
+Best Iter(dev)=   11	 dev=(HR@5:0.3802,NDCG@5:0.2656) [79.6 s] 
+INFO:root:Load model from ../model/NeuMF/NeuMF__MovieLens-1M/ML_1MTOPK__0__lr=0.0005__l2=1e-07__emb_size=64__layers=[64].pt
+INFO:root:
+Dev  After Training: (HR@5:0.3802,NDCG@5:0.2656,HR@10:0.5339,NDCG@10:0.3146,HR@20:0.7471,NDCG@20:0.3682,HR@50:0.9388,NDCG@50:0.4071)
+INFO:root:
+Test After Training: (HR@5:0.3319,NDCG@5:0.2277,HR@10:0.5057,NDCG@10:0.2837,HR@20:0.7213,NDCG@20:0.3385,HR@50:0.9353,NDCG@50:0.3817)
+INFO:root:Saving top-100 recommendation results to: ../log/NeuMF/NeuMF__MovieLens-1M\ML_1MTOPK__0__lr=0\rec-NeuMF-dev.csv
+INFO:root:dev Prediction results saved!
+INFO:root:Saving top-100 recommendation results to: ../log/NeuMF/NeuMF__MovieLens-1M\ML_1MTOPK__0__lr=0\rec-NeuMF-test.csv
+INFO:root:test Prediction results saved!
+INFO:root:
+--------------------------------------------- END: 2024-10-25 10:26:33 ---------------------------------------------

@@ -1,0 +1,82 @@
+INFO:root:Namespace(model_name='SASRec', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-10-23 16:14:57 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 32                  
+ epoch              | 100                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ history_max        | 20                  
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ num_heads          | 4                   
+ num_layers         | 1                   
+ num_neg            | 1                   
+ num_workers        | 0                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "data/", dataset = "Grocery_and_Gourmet_Food" 
+INFO:root:Namespace(model_name='SASRec', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-10-23 16:15:08 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 32                  
+ epoch              | 100                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ history_max        | 20                  
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ num_heads          | 4                   
+ num_layers         | 1                   
+ num_neg            | 1                   
+ num_workers        | 0                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food\SeqReader.pkl
+INFO:root:#params: 284928
+INFO:root:SASRec(
+  (i_embeddings): Embedding(8714, 32)
+  (p_embeddings): Embedding(21, 32)
+  (transformer_block): ModuleList(
+    (0): TransformerLayer(
+      (masked_attn_head): MultiHeadAttention(
+        (q_linear): Linear(in_features=32, out_features=32, bias=True)
+        (k_linear): Linear(in_features=32, out_features=32, bias=True)
+        (v_linear): Linear(in_features=32, out_features=32, bias=True)
+      )
+      (layer_norm1): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+      (dropout1): Dropout(p=0, inplace=False)
+      (linear1): Linear(in_features=32, out_features=32, bias=True)
+      (linear2): Linear(in_features=32, out_features=32, bias=True)
+      (layer_norm2): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+      (dropout2): Dropout(p=0, inplace=False)
+    )
+  )
+)

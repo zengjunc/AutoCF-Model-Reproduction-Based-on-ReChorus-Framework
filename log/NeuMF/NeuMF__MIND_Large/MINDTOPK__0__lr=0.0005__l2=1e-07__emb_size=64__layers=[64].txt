@@ -1,0 +1,81 @@
+INFO:root:Namespace(model_name='NeuMF', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-10-25 10:19:06 ---------------------------------------------
+INFO:root:
+==========================================
+ Arguments          | Values              
+==========================================
+ batch_size         | 256                
+ data_appendix      |                    
+ dataset            | MIND_Large/MINDTOPK
+ dropout            | 0.2                
+ early_stop         | 10                 
+ emb_size           | 64                 
+ epoch              | 100                
+ eval_batch_size    | 256                
+ gpu                | 0                  
+ l2                 | 1e-07              
+ layers             | [64]               
+ lr                 | 0.0005             
+ main_metric        |                    
+ num_neg            | 1                  
+ num_workers        | 0                  
+ optimizer          | Adam               
+ random_seed        | 0                  
+ save_final_results | 1                  
+ test_all           | 0                  
+ topk               | 5,10,20,50         
+==========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/MIND_Large/MINDTOPK\BaseReader.pkl
+INFO:root:#params: 2484544
+INFO:root:NeuMF(
+  (mf_u_embeddings): Embedding(16527, 64)
+  (mf_i_embeddings): Embedding(2818, 64)
+  (mlp_u_embeddings): Embedding(16527, 64)
+  (mlp_i_embeddings): Embedding(2818, 64)
+  (mlp): ModuleList(
+    (0): Linear(in_features=128, out_features=64, bias=True)
+  )
+  (dropout_layer): Dropout(p=0.2, inplace=False)
+  (prediction): Linear(in_features=128, out_features=1, bias=False)
+)
+INFO:root:Test Before Training: (HR@5:0.0755,NDCG@5:0.0436,HR@10:0.1588,NDCG@10:0.0704,HR@20:0.2618,NDCG@20:0.0964,HR@50:0.5441,NDCG@50:0.1518)
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1     loss=0.4338 [11.2 s]	dev=(HR@5:0.0344,NDCG@5:0.0195) [0.3 s] *
+INFO:root:Epoch 2     loss=0.3594 [10.8 s]	dev=(HR@5:0.0322,NDCG@5:0.0187) [0.3 s]
+INFO:root:Epoch 3     loss=0.3498 [10.8 s]	dev=(HR@5:0.0322,NDCG@5:0.0190) [0.3 s]
+INFO:root:Epoch 4     loss=0.3316 [10.7 s]	dev=(HR@5:0.0380,NDCG@5:0.0219) [0.2 s] *
+INFO:root:Epoch 5     loss=0.2958 [10.6 s]	dev=(HR@5:0.0405,NDCG@5:0.0232) [0.3 s] *
+INFO:root:Epoch 6     loss=0.2534 [10.6 s]	dev=(HR@5:0.0436,NDCG@5:0.0254) [0.2 s] *
+INFO:root:Epoch 7     loss=0.2120 [10.7 s]	dev=(HR@5:0.0500,NDCG@5:0.0288) [0.3 s] *
+INFO:root:Epoch 8     loss=0.1745 [10.7 s]	dev=(HR@5:0.0518,NDCG@5:0.0307) [0.3 s] *
+INFO:root:Epoch 9     loss=0.1458 [10.7 s]	dev=(HR@5:0.0494,NDCG@5:0.0300) [0.3 s]
+INFO:root:Epoch 10    loss=0.1228 [10.6 s]	dev=(HR@5:0.0546,NDCG@5:0.0336) [0.3 s] *
+INFO:root:Epoch 11    loss=0.1027 [10.6 s]	dev=(HR@5:0.0626,NDCG@5:0.0377) [0.3 s] *
+INFO:root:Epoch 12    loss=0.0878 [10.7 s]	dev=(HR@5:0.0574,NDCG@5:0.0349) [0.3 s]
+INFO:root:Epoch 13    loss=0.0762 [10.8 s]	dev=(HR@5:0.0601,NDCG@5:0.0361) [0.3 s]
+INFO:root:Epoch 14    loss=0.0666 [10.7 s]	dev=(HR@5:0.0629,NDCG@5:0.0370) [0.3 s]
+INFO:root:Epoch 15    loss=0.0586 [10.6 s]	dev=(HR@5:0.0663,NDCG@5:0.0383) [0.3 s] *
+INFO:root:Epoch 16    loss=0.0521 [10.7 s]	dev=(HR@5:0.0607,NDCG@5:0.0359) [0.3 s]
+INFO:root:Epoch 17    loss=0.0482 [10.6 s]	dev=(HR@5:0.0589,NDCG@5:0.0357) [0.2 s]
+INFO:root:Epoch 18    loss=0.0425 [10.8 s]	dev=(HR@5:0.0589,NDCG@5:0.0352) [0.3 s]
+INFO:root:Epoch 19    loss=0.0389 [10.9 s]	dev=(HR@5:0.0598,NDCG@5:0.0362) [0.3 s]
+INFO:root:Epoch 20    loss=0.0356 [10.6 s]	dev=(HR@5:0.0610,NDCG@5:0.0362) [0.3 s]
+INFO:root:Epoch 21    loss=0.0333 [10.8 s]	dev=(HR@5:0.0577,NDCG@5:0.0354) [0.3 s]
+INFO:root:Epoch 22    loss=0.0318 [10.7 s]	dev=(HR@5:0.0586,NDCG@5:0.0360) [0.3 s]
+INFO:root:Epoch 23    loss=0.0299 [10.9 s]	dev=(HR@5:0.0586,NDCG@5:0.0364) [0.3 s]
+INFO:root:Epoch 24    loss=0.0278 [10.9 s]	dev=(HR@5:0.0598,NDCG@5:0.0375) [0.3 s]
+INFO:root:Early stop at 24 based on dev result.
+INFO:root:
+Best Iter(dev)=   15	 dev=(HR@5:0.0663,NDCG@5:0.0383) [264.3 s] 
+INFO:root:Load model from ../model/NeuMF/NeuMF__MIND_Large/MINDTOPK__0__lr=0.0005__l2=1e-07__emb_size=64__layers=[64].pt
+INFO:root:
+Dev  After Training: (HR@5:0.0663,NDCG@5:0.0383,HR@10:0.1344,NDCG@10:0.0598,HR@20:0.2497,NDCG@20:0.0887,HR@50:0.5399,NDCG@50:0.1457)
+INFO:root:
+Test After Training: (HR@5:0.1020,NDCG@5:0.0638,HR@10:0.1775,NDCG@10:0.0881,HR@20:0.3000,NDCG@20:0.1190,HR@50:0.5373,NDCG@50:0.1655)
+INFO:root:Saving top-100 recommendation results to: ../log/NeuMF/NeuMF__MIND_Large\MINDTOPK__0__lr=0\rec-NeuMF-dev.csv
+INFO:root:dev Prediction results saved!
+INFO:root:Saving top-100 recommendation results to: ../log/NeuMF/NeuMF__MIND_Large\MINDTOPK__0__lr=0\rec-NeuMF-test.csv
+INFO:root:test Prediction results saved!
+INFO:root:
+--------------------------------------------- END: 2024-10-25 10:23:34 ---------------------------------------------

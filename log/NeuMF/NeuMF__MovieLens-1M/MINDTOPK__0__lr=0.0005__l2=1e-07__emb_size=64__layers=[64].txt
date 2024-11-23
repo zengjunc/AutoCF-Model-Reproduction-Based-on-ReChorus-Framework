@@ -1,0 +1,29 @@
+INFO:root:Namespace(model_name='NeuMF', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-10-25 10:24:51 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | MovieLens-1M/MIND...
+ dropout            | 0.2                 
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 100                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-07               
+ layers             | [64]                
+ lr                 | 0.0005              
+ main_metric        |                     
+ num_neg            | 1                   
+ num_workers        | 0                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "data/", dataset = "MovieLens-1M/MINDTOPK" 

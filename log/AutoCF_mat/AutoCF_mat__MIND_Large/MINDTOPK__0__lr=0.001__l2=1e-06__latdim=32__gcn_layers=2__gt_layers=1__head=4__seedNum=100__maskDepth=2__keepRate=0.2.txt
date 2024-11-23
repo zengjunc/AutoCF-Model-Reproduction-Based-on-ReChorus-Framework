@@ -1,0 +1,720 @@
+INFO:root:Namespace(model_name='AutoCF_mat', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-10-18 09:56:10 ---------------------------------------------
+INFO:root:
+==========================================
+ Arguments          | Values              
+==========================================
+ batch_size         | 256                
+ data_appendix      |                    
+ dataset            | MIND_Large/MINDTOPK
+ dropout            | 0                  
+ early_stop         | 10                 
+ epoch              | 100                
+ eval_batch_size    | 256                
+ fixSteps           | 10                 
+ gcn_layers         | 2                  
+ gpu                | 0                  
+ gt_layers          | 1                  
+ head               | 4                  
+ keepRate           | 0.2                
+ l2                 | 1e-06              
+ latdim             | 32                 
+ lr                 | 0.001              
+ main_metric        |                    
+ maskDepth          | 2                  
+ num_neg            | 1                  
+ num_workers        | 0                  
+ optimizer          | Adam               
+ random_seed        | 0                  
+ save_final_results | 1                  
+ save_path          | tem                
+ seedNum            | 100                
+ ssl_reg            | 1                  
+ test_all           | 0                  
+ topk               | 5,10,20,50         
+ tstBat             | 256                
+==========================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "data/", dataset = "MIND_Large/MINDTOPK" 
+INFO:root:Counting dataset statistics...
+INFO:root:"# user": 16526, "# item": 2817, "# entry": 163861
+INFO:root:Namespace(model_name='AutoCF_mat', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-10-18 09:57:19 ---------------------------------------------
+INFO:root:
+==========================================
+ Arguments          | Values              
+==========================================
+ batch_size         | 256                
+ data_appendix      |                    
+ dataset            | MIND_Large/MINDTOPK
+ dropout            | 0                  
+ early_stop         | 10                 
+ epoch              | 100                
+ eval_batch_size    | 256                
+ fixSteps           | 10                 
+ gcn_layers         | 2                  
+ gpu                | 0                  
+ gt_layers          | 1                  
+ head               | 4                  
+ keepRate           | 0.2                
+ l2                 | 1e-06              
+ latdim             | 32                 
+ lr                 | 0.001              
+ main_metric        |                    
+ maskDepth          | 2                  
+ num_neg            | 1                  
+ num_workers        | 0                  
+ optimizer          | Adam               
+ random_seed        | 0                  
+ save_final_results | 1                  
+ save_path          | tem                
+ seedNum            | 100                
+ ssl_reg            | 1                  
+ test_all           | 0                  
+ topk               | 5,10,20,50         
+ tstBat             | 256                
+==========================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "data/", dataset = "MIND_Large/MINDTOPK" 
+INFO:root:Counting dataset statistics...
+INFO:root:"# user": 16526, "# item": 2817, "# entry": 163861
+INFO:root:Namespace(model_name='AutoCF_mat', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-10-18 09:58:35 ---------------------------------------------
+INFO:root:
+==========================================
+ Arguments          | Values              
+==========================================
+ batch_size         | 256                
+ data_appendix      |                    
+ dataset            | MIND_Large/MINDTOPK
+ dropout            | 0                  
+ early_stop         | 10                 
+ epoch              | 100                
+ eval_batch_size    | 256                
+ fixSteps           | 10                 
+ gcn_layers         | 2                  
+ gpu                | 0                  
+ gt_layers          | 1                  
+ head               | 4                  
+ keepRate           | 0.2                
+ l2                 | 1e-06              
+ latdim             | 32                 
+ lr                 | 0.001              
+ main_metric        |                    
+ maskDepth          | 2                  
+ num_neg            | 1                  
+ num_workers        | 0                  
+ optimizer          | Adam               
+ random_seed        | 0                  
+ save_final_results | 1                  
+ save_path          | tem                
+ seedNum            | 100                
+ ssl_reg            | 1                  
+ test_all           | 0                  
+ topk               | 5,10,20,50         
+ tstBat             | 256                
+==========================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "data/", dataset = "MIND_Large/MINDTOPK" 
+INFO:root:Counting dataset statistics...
+INFO:root:"# user": 16526, "# item": 2817, "# entry": 163861
+INFO:root:Save corpus to data/MIND_Large/MINDTOPK\AutoCFReader_mat.pkl
+INFO:root:#params: 240864
+INFO:root:AutoCF_mat(
+  (gcnLayers): Sequential(
+    (0): GCNLayer()
+    (1): GCNLayer()
+  )
+  (gtLayers): Sequential(
+    (0): GTLayer()
+  )
+)
+INFO:root:Reading data from "data/", dataset = "MIND_Large/MINDTOPK" 
+INFO:root:Counting dataset statistics...
+INFO:root:"# user": 16526, "# item": 2817, "# entry": 163861
+INFO:root:Model Initialized
+INFO:root:Step 0/281: loss = 16.4, reg = 0.0, cl = 16.2
+INFO:root:Step 1/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 2/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 3/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 4/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 5/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 6/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 7/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 8/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 9/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 10/281: loss = 16.3, reg = 0.0, cl = 16.2
+INFO:root:Step 11/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 12/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 13/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 14/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 15/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 16/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 17/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 18/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 19/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 20/281: loss = 16.3, reg = 0.0, cl = 16.2
+INFO:root:Step 21/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 22/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 23/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 24/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 25/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 26/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 27/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 28/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 29/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 30/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 31/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 32/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 33/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 34/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 35/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 36/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 37/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 38/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 39/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 40/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 41/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 42/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 43/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 44/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 45/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 46/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 47/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 48/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 49/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 50/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 51/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 52/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 53/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 54/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 55/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 56/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 57/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 58/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 59/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 60/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 61/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 62/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 63/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 64/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 65/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 66/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 67/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 68/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 69/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 70/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 71/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 72/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 73/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 74/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 75/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 76/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 77/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 78/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 79/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 80/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 81/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 82/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 83/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 84/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 85/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 86/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 87/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 88/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 89/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 90/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 91/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 92/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 93/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 94/281: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 95/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 96/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 97/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 98/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 99/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 100/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 101/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 102/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 103/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 104/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 105/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 106/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 107/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 108/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 109/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 110/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 111/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 112/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 113/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 114/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 115/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 116/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 117/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 118/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 119/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 120/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 121/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 122/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 123/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 124/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 125/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 126/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 127/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 128/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 129/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 130/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 131/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 132/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 133/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 134/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 135/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 136/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 137/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 138/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 139/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 140/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 141/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 142/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 143/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 144/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 145/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 146/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 147/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 148/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 149/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 150/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 151/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 152/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 153/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 154/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 155/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 156/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 157/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 158/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 159/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 160/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 161/281: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 162/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 163/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 164/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 165/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 166/281: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 167/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 168/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 169/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 170/281: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 171/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 172/281: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 173/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 174/281: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 175/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 176/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 177/281: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 178/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 179/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 180/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 181/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 182/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 183/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 184/281: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 185/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 186/281: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 187/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 188/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 189/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 190/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 191/281: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 192/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 193/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 194/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 195/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 196/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 197/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 198/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 199/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 200/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 201/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 202/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 203/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 204/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 205/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 206/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 207/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 208/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 209/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 210/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 211/281: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 212/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 213/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 214/281: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 215/281: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 216/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 217/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 218/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 219/281: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 220/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 221/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 222/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 223/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 224/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 225/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 226/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 227/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 228/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 229/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 230/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 231/281: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 232/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 233/281: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 234/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 235/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 236/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 237/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 238/281: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 239/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 240/281: loss = 16.0, reg = 0.0, cl = 16.1
+INFO:root:Step 241/281: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 242/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 243/281: loss = 16.0, reg = 0.0, cl = 16.1
+INFO:root:Step 244/281: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 245/281: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 246/281: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 247/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 248/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 249/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 250/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 251/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 252/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 253/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 254/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 255/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 256/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 257/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 258/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 259/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 260/281: loss = 16.0, reg = 0.0, cl = 16.1
+INFO:root:Step 261/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 262/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 263/281: loss = 16.2, reg = 0.0, cl = 16.3
+INFO:root:Step 264/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 265/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 266/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 267/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 268/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 269/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 270/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 271/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 272/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 273/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 274/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 275/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 276/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 277/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 278/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 279/281: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 280/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 281/281: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Epoch 0/100, Train: Loss = 16.1797, preLoss = -0.0558  
+INFO:root:Namespace(model_name='AutoCF_mat', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-10-18 10:01:56 ---------------------------------------------
+INFO:root:
+==========================================
+ Arguments          | Values              
+==========================================
+ batch_size         | 256                
+ data_appendix      |                    
+ dataset            | MIND_Large/MINDTOPK
+ dropout            | 0                  
+ early_stop         | 10                 
+ epoch              | 100                
+ eval_batch_size    | 256                
+ fixSteps           | 10                 
+ gcn_layers         | 2                  
+ gpu                | 0                  
+ gt_layers          | 1                  
+ head               | 4                  
+ keepRate           | 0.2                
+ l2                 | 1e-06              
+ latdim             | 32                 
+ lr                 | 0.001              
+ main_metric        |                    
+ maskDepth          | 2                  
+ num_neg            | 1                  
+ num_workers        | 0                  
+ optimizer          | Adam               
+ random_seed        | 0                  
+ save_final_results | 1                  
+ save_path          | tem                
+ seedNum            | 100                
+ ssl_reg            | 1                  
+ test_all           | 0                  
+ topk               | 5,10,20,50         
+ tstBat             | 256                
+==========================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "data/", dataset = "MIND_Large/MINDTOPK" 
+INFO:root:Counting dataset statistics...
+INFO:root:"# user": 16526, "# item": 2817, "# entry": 163861
+INFO:root:Save corpus to data/MIND_Large/MINDTOPK\AutoCFReader_mat.pkl
+INFO:root:#params: 240864
+INFO:root:AutoCF_mat(
+  (gcnLayers): Sequential(
+    (0): GCNLayer()
+    (1): GCNLayer()
+  )
+  (gtLayers): Sequential(
+    (0): GTLayer()
+  )
+)
+INFO:root:Reading data from "data/", dataset = "MIND_Large/MINDTOPK" 
+INFO:root:Counting dataset statistics...
+INFO:root:"# user": 16526, "# item": 2817, "# entry": 163861
+INFO:root:Model Initialized
+INFO:root:Step 0/212: loss = 16.4, reg = 0.0, cl = 16.2
+INFO:root:Step 1/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 2/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 3/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 4/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 5/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 6/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 7/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 8/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 9/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 10/212: loss = 16.3, reg = 0.0, cl = 16.2
+INFO:root:Step 11/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 12/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 13/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 14/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 15/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 16/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 17/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 18/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 19/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 20/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 21/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 22/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 23/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 24/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 25/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 26/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 27/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 28/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 29/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 30/212: loss = 16.3, reg = 0.0, cl = 16.2
+INFO:root:Step 31/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 32/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 33/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 34/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 35/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 36/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 37/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 38/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 39/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 40/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 41/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 42/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 43/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 44/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 45/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 46/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 47/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 48/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 49/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 50/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 51/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 52/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 53/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 54/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 55/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 56/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 57/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 58/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 59/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 60/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 61/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 62/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 63/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 64/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 65/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 66/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 67/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 68/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 69/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 70/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 71/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 72/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 73/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 74/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 75/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 76/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 77/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 78/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 79/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 80/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 81/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 82/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 83/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 84/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 85/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 86/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 87/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 88/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 89/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 90/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 91/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 92/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 93/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 94/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 95/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 96/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 97/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 98/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 99/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 100/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 101/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 102/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 103/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 104/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 105/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 106/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 107/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 108/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 109/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 110/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 111/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 112/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 113/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 114/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 115/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 116/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 117/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 118/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 119/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 120/212: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 121/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 122/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 123/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 124/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 125/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 126/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 127/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 128/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 129/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 130/212: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 131/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 132/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 133/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 134/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 135/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 136/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 137/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 138/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 139/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 140/212: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 141/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 142/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 143/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 144/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 145/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 146/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 147/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 148/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 149/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 150/212: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 151/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 152/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 153/212: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 154/212: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 155/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 156/212: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 157/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 158/212: loss = 16.2, reg = 0.0, cl = 16.2
+INFO:root:Step 159/212: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 160/212: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 161/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 162/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 163/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 164/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 165/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 166/212: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 167/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 168/212: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 169/212: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 170/212: loss = 16.0, reg = 0.0, cl = 16.1
+INFO:root:Step 171/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 172/212: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 173/212: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 174/212: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 175/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 176/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 177/212: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 178/212: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 179/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 180/212: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 181/212: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 182/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 183/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 184/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 185/212: loss = 16.1, reg = 0.0, cl = 16.1
+INFO:root:Step 186/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 187/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 188/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 189/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 190/212: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 191/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 192/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 193/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 194/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 195/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 196/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 197/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 198/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 199/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 200/212: loss = 16.0, reg = 0.0, cl = 16.1
+INFO:root:Step 201/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 202/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 203/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 204/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 205/212: loss = 16.0, reg = 0.0, cl = 16.1
+INFO:root:Step 206/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 207/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 208/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 209/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 210/212: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 211/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 212/212: loss = 16.0, reg = 0.0, cl = 16.1
+INFO:root:Epoch 0/100, Train: Loss = 16.2087, preLoss = -0.0445  
+INFO:root:Steps 1/20: recall = 14.6, ndcg = 13.7          
+INFO:root:Steps 2/20: recall = 18.7, ndcg = 16.6          
+INFO:root:Steps 3/20: recall = 12.1, ndcg = 13.7          
+INFO:root:Steps 4/20: recall = 16.3, ndcg = 16.2          
+INFO:root:Steps 5/20: recall = 19.4, ndcg = 19.5          
+INFO:root:Steps 6/20: recall = 13.5, ndcg = 12.9          
+INFO:root:Steps 7/20: recall = 11.6, ndcg = 11.8          
+INFO:root:Steps 8/20: recall = 16.9, ndcg = 16.4          
+INFO:root:Steps 9/20: recall = 13.5, ndcg = 13.8          
+INFO:root:Steps 10/20: recall = 13.3, ndcg = 13.0          
+INFO:root:Steps 11/20: recall = 15.4, ndcg = 16.4          
+INFO:root:Steps 12/20: recall = 12.7, ndcg = 12.6          
+INFO:root:Steps 13/20: recall = 14.4, ndcg = 12.0          
+INFO:root:Steps 14/20: recall = 10.9, ndcg = 11.6          
+INFO:root:Steps 15/20: recall = 13.3, ndcg = 12.7          
+INFO:root:Steps 16/20: recall = 18.0, ndcg = 13.6          
+INFO:root:Steps 17/20: recall = 14.4, ndcg = 12.9          
+INFO:root:Steps 18/20: recall = 14.6, ndcg = 13.7          
+INFO:root:Steps 19/20: recall = 20.6, ndcg = 18.3          
+INFO:root:Steps 20/20: recall = 18.7, ndcg = 17.4          
+INFO:root:Steps 21/20: recall = 1.8, ndcg = 2.3          
+INFO:root:Epoch 0/100, Test: Recall = 0.0589, NDCG = 0.0563  
+INFO:root:Model Saved: tem
+INFO:root:Step 0/212: loss = 15.9, reg = 0.0, cl = 16.1
+INFO:root:Step 1/212: loss = 16.0, reg = 0.0, cl = 16.1
+INFO:root:Step 2/212: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 3/212: loss = 16.0, reg = 0.0, cl = 16.1
+INFO:root:Step 4/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 5/212: loss = 16.0, reg = 0.0, cl = 16.1
+INFO:root:Step 6/212: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 7/212: loss = 16.0, reg = 0.0, cl = 16.2
+INFO:root:Step 8/212: loss = 16.1, reg = 0.0, cl = 16.2
+INFO:root:Step 9/212: loss = 16.0, reg = 0.0, cl = 16.2
