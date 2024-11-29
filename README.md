@@ -1,2 +1,3 @@
 # AutoCF-Model-Reproduction-Based-on-ReChorus-Framework
 具体实现在分支master
+分支data为针对AutoCF预处理后的数据文件，其余可通过Rechorus原github项目获取
